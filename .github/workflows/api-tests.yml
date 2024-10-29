@@ -25,5 +25,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - uses: actions/upload-artifact@v4
+      with:
+          name: report
+          path: mochawesome-report
     - run: npm ci
     - run: npm test
