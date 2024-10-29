@@ -28,6 +28,6 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
           name: report
-          path: mochawesome-report
+          path: mochawesome-report/
     - run: npm ci
     - run: npm test
