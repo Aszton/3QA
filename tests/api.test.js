@@ -31,7 +31,7 @@ describe("Api tests", () => {
         userName: "3QA",
         password: password,
       })
-      token = response.body.token
+      token = response.body.token;
     expect(response.statusCode).to.eql(200);
   });
 
